@@ -13,7 +13,6 @@
 
 .lato-regular {
     font-family: "Lato", sans-serif;
-    font-weight: 500;
     font-style: normal;
 }
 
@@ -28,6 +27,24 @@
 
 }
 
+.section {
+    max-width: 1440px;
+    margin: 0 calc(50% - 720px) 0 calc(50% - 720px);
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 25px;
+    font-weight: 500;
+    color: #27272760;
+}
+
 /* banner Styles */
 
 .banner {
@@ -35,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
     gap: 100px;
 }
 
@@ -49,21 +66,93 @@
 }
 
 .banner-description {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     color: #27272760;
 }
 
-@media screen and (max-width: 576px){
+
+/* featured flowers section */
+
+.featured-description {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.featured-flower {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    margin: 70px;
+}
+
+.flower1,
+.flower2,
+.flower3 {
+    width: 400px;
+    height: 500px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 200px 200px 0 0;
+}
+
+.flower1 {
+    background-color: pink;
+}
+
+.flower2 {
+    background-color: skyblue;
+}
+
+.flower3 {
+    background-color: mediumaquamarine;
+}
+
+.flower-name {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* Responsive CSS codes for mobiles and similar smaller devices */
+@media screen and (max-width: 576px) {
     .hide {
         display: none;
     }
+
+    .section {
+        min-width: 340px;
+        max-width: fit-content;
+        margin-top: 5px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .section-description {
+        font-size: 14px;
+        font-weight: 500;
+        color: #27272760;
+    }
+
+    .button-type1{
+        padding: 5px 7px;
+        font-size: 12px;
+    }
+    /* banner styles for mobile */
 
     .banner {
         flex-direction: column;
         text-align: center;
         background-image: url(../Flower/pngwing\ 10.png);
-        margin: 0;
+        padding: 20px ;
     }
 
     .banner-text {
@@ -71,8 +160,8 @@
     }
 
     .banner-title {
+        font-size: 30px;
         padding: 0;
-        font-size: 2.5em;
         margin-top: 0;
     }
 
@@ -80,4 +169,38 @@
         font-size: small;
         color: gray;
     }
+
+    .shop-button {
+        margin: 10px;
+    }
+
+    /* Featured section styles for mobile */
+
+    .featured-flower {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 10px;
+    }
+
+
+    .flower1,
+    .flower2,
+    .flower3 {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .featured-description {
+        text-align: center;
+        margin: 0 600px;
+    }
+
+    .flower-name{
+        font-size: 15px;
+    }
+
 }
