@@ -1,0 +1,83 @@
+/* shared styles */
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.button-type1 {
+    background-color: #E55473;
+    padding: 20px 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    color: white;
+
+}
+
+/* banner Styles */
+
+.banner {
+    background-color: #E5547310;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 100px;
+}
+
+.banner-text {
+    width: 700px;
+}
+
+.banner-title {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.banner-description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #27272760;
+}
+
+@media screen and (max-width: 576px){
+    .hide {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        background-image: url(../Flower/pngwing\ 10.png);
+        margin: 0;
+    }
+
+    .banner-text {
+        width: auto;
+    }
+
+    .banner-title {
+        padding: 0;
+        font-size: 2.5em;
+        margin-top: 0;
+    }
+
+    .banner-description {
+        font-size: small;
+        color: gray;
+    }
+}
